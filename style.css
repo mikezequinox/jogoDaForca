@@ -1,0 +1,34 @@
+body {
+    font-family : Arial , sans - serif ;
+    text-align : center ;
+    }
+#forca {
+    margin : 20 px auto ;
+    width : 300 px ;
+    height : 300 px ;
+    border : 1 px solid #000;
+    position : relative ;
+}
+#palavra {
+    letter-spacing : 5 px ;
+    font-size : 2 em ;
+    margin : 20 px ;
+}
+#teclado {
+    display : flex ;
+    flex-wrap : wrap ;
+    justify-content: center ;
+    gap: 5 px ;
+    max-width : 400 px ;
+    margin: 0 auto ;
+}
+.letra {
+    width : 30 px ;
+    height : 30 px ;
+    font-size : 1.2 em ;
+    cursor: pointer ;
+}
+.usada {
+background-color : #ccc ;
+cursor : not - allowed ;
+}
