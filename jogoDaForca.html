@@ -1,21 +1,30 @@
-<!DOCTYPE html >
-<html >
-    <head >
-        <meta charset ="UTF -8">
-        <title > Jogo da Forca </title>
-        <link href="style.css" rel="stylesheet">
-    </head >
-    <body>
-        <h1 > Jogo da Forca </h1 >
-        <div id=" forca ">
-            <!-- Desenho da forca s e r renderizado aqui -->
-        </div >
-        <div id=" palavra ">\ _ \ _ \ _ \_ \_ </div >
-        <div id=" teclado ">
-            <!-- Teclado virtual s e r gerado via JavaScript -->
-        </div >
-        <p> Tentativas restantes : <span id=" tentativas ">6 </span> </p>
-        <button id=" reiniciar " style =" display : none ;"> Jogar Novamente </button >
-        <script src="script.js"></script>
-    </body>
-</html >
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Jogo da Forca - Tema: Computação</h1>
+    <div id="forca">
+      <div class="parte base"></div>
+      <div class="parte poste"></div>
+      <div class="parte haste"></div>
+      <div class="parte corda"></div>
+      <div class="parte cabeca" style="display: none"></div>
+      <div class="parte corpo" style="display: none"></div>
+      <div class="parte bracoE" style="display: none"></div>
+      <div class="parte bracoD" style="display: none"></div>
+      <div class="parte pernaE" style="display: none"></div>
+      <div class="parte pernaD" style="display: none"></div>
+    </div>
+    <div id="palavra"></div>
+    <div id="teclado"></div>
+    <p>Tentativas restantes: <span id="tentativas">6</span></p>
+    <div id="tentativasX">X X X X X X</div>
+    <button id="reiniciar" style="display: none">Jogar Novamente</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

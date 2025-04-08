@@ -1,34 +1,134 @@
 body {
-    font-family : Arial , sans - serif ;
-    text-align : center ;
-    }
-#forca {
-    margin : 20 px auto ;
-    width : 300 px ;
-    height : 300 px ;
-    border : 1 px solid #000;
-    position : relative ;
-}
-#palavra {
-    letter-spacing : 5 px ;
-    font-size : 2 em ;
-    margin : 20 px ;
-}
-#teclado {
-    display : flex ;
-    flex-wrap : wrap ;
-    justify-content: center ;
-    gap: 5 px ;
-    max-width : 400 px ;
-    margin: 0 auto ;
-}
-.letra {
-    width : 30 px ;
-    height : 30 px ;
-    font-size : 1.2 em ;
-    cursor: pointer ;
-}
-.usada {
-background-color : #ccc ;
-cursor : not - allowed ;
-}
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  #forca {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .parte {
+    position: absolute;
+    background-color: #000;
+  }
+  
+  .base {
+    width: 100px;
+    height: 10px;
+    bottom: 0;
+    left: 100px;
+  }
+  .poste {
+    width: 10px;
+    height: 250px;
+    bottom: 10px;
+    left: 145px;
+  }
+  .haste {
+    width: 100px;
+    height: 10px;
+    top: 0;
+    left: 145px;
+  }
+  .corda {
+    width: 2px;
+    height: 50px;
+    top: 10px;
+    left: 240px;
+    background-color: #999;
+  }
+  .cabeca {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 60px;
+    left: 220px;
+    background-color: #000;
+  }
+  .corpo {
+    width: 4px;
+    height: 70px;
+    top: 100px;
+    left: 238px;
+    background-color: #000;
+  }
+  .bracoE {
+    width: 40px;
+    height: 4px;
+    top: 120px;
+    left: 198px;
+    transform: rotate(30deg);
+  }
+  .bracoD {
+    width: 40px;
+    height: 4px;
+    top: 120px;
+    left: 238px;
+    transform: rotate(-30deg);
+  }
+  .pernaE {
+    width: 40px;
+    height: 4px;
+    top: 170px;
+    left: 198px;
+    transform: rotate(-30deg);
+  }
+  .pernaD {
+    width: 40px;
+    height: 4px;
+    top: 170px;
+    left: 238px;
+    transform: rotate(30deg);
+  }
+  
+  #palavra {
+    letter-spacing: 10px;
+    font-size: 2em;
+    margin: 20px;
+  }
+  
+  #teclado {
+    display: block;
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .letra {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .usada {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #tentativasX {
+    font-size: 2em;
+    letter-spacing: 10px;
+    margin-top: 10px;
+  }
+  
+  #reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
